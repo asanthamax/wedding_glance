@@ -53,4 +53,46 @@ angular.module('starter.controllers', [])
 })
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {
+})
+
+.controller('ItemMenuCtrl',function ($scope, $stateParams) {
+
+})
+
+.controller('BrideCtrl',function($scope) {
+
+})
+
+.controller('GroomCtrl',function($scope) {
+
+
+})
+
+.controller('MenuSingleCtrl',function($scope, $stateParams){
+
+  if($stateParams.menuId == 3)
+    $scope.title = "Bridal";
+  else if($stateParams.menuId == 1)
+    $scope.title = "Groom";
+  else
+    $scope.title="Other";
+})
+
+.controller('ProfileCtrl',function ($scope,$stateParams) {
+
+  $scope.slideChanged = function(index) {
+    $scope.slideIndex = index;
+  };
+})
+
+.controller('OtherCtrl',function($scope) {
+
+})
+
+.controller('MagazineCtrl',function($scope, $stateParams) {
+
+})
+.controller('BookmarkListCtrl',function($scope) {
+
+  $scope.listCanSwipe = true;
 });

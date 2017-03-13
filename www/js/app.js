@@ -58,6 +58,69 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
     })
+    .state('app.itemmenu',{
+      url: '/itemmenu',
+      views:{
+        'menuContent' : {
+          templateUrl: 'templates/itemmenu.html',
+          controller: 'ItemMenuCtrl'
+        }
+      }
+    })
+    .state('app.bride',{
+      url: '/bride',
+      views:{
+        'menuContent':{
+          templateUrl: 'templates/bride.html',
+          controller: 'BrideCtrl'
+        }
+      }
+    })
+    .state('app.groom',{
+      url: '/groom',
+      views:{
+        'menuContent':{
+          templateUrl: 'templates/groom.html',
+          controller: 'GroomCtrl'
+        }
+      }
+    })
+    .state('app.other',{
+      url: '/other',
+      views:{
+        'menuContent':{
+          templateUrl: 'templates/other.html',
+          controller: 'OtherCtrl'
+        }
+      }
+    })
+    .state('app.menusingle',{
+      url: '/menusingle/:menuId',
+      views:{
+        'menuContent':{
+          templateUrl: 'templates/menusingle.html',
+          controller: 'MenuSingleCtrl'
+        }
+      }
+    })
+    .state('app.profile',{
+      url: '/profile/:profileId',
+      views:{
+        'menuContent':{
+          templateUrl: 'templates/profile.html',
+          controller: 'ProfileCtrl'
+        }
+      }
+    })
+    .state('app.magazine',{
+      url: '/magazine',
+      views:{
+        'menuContent':{
+          templateUrl: 'templates/magazine.html',
+          controller: 'MagazineCtrl'
+        }
+      }
+    })
 
   .state('app.single', {
     url: '/playlists/:playlistId',
@@ -69,5 +132,5 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/playlists');
+  $urlRouterProvider.otherwise('/app/magazine');
 });
