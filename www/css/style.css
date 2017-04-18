@@ -42,12 +42,44 @@
 
 .full-background{
 
-  background: url('../img/2.png') no-repeat;
+  background: url('../img/3.png') no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 
+}
+.module.parallax {
+  height: 600px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.item-text{
+
+  text-align: center;
+}
+.module.content {
+  padding: 40px 0;
+}
+
+.title-head{
+
+  z-index: 2;
+  color: white;
+  text-align: center;
+}
+
+.module:last-child {
+  margin-bottom: 0;
+}
+
+.module.parallax-1 {
+  background-image: url('../img/3.png');
 }
 
 #content {
